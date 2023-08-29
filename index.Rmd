@@ -3,7 +3,385 @@ title: "Biotic and abiotic contamination of food"
 author: "A.J. Signes-Pastor"
 #date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
+bibliography: "`r here::here('metadata', 'Library.bib')`"
+csl: "`r here::here('metadata', 'environmental-research.csl')`"
+editor_options: 
+  chunk_output_type: console
 ---
 
-# xxxxxx
+# Risk
 
+## Risk analysis
+
+```{r, include=FALSE}
+library(here)
+library(tibble)
+library(tidyverse)
+library(formattable)
+library(data.table)
+library(kableExtra)
+library(flextable)
+```
+
+Risk analysis is internationally accepted as a key component to support decision-making around food safety.
+
+Risk analysis has been defined by Codex Alimentarius Commission as a process consisting of three components: i) **risk assessment**, ii) **risk management** and iii) **risk communication**: [@IPCS2009]: <!--in Bibdesk I have the link to download the documents-->
+
+<br/>
+
+**Figure 1**: Risk analysis
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "Risk analysis.png"))
+```
+
+<br/>
+
+<hr style="border:2px solid blue"> </hr>
+
+- **Risk assessment**: A scientifically based process consisting of the following steps: 
+
+   1. Hazard identification, 
+
+   2. Hazard characterization,
+
+   3. Exposure assessment, and 
+
+   4. Risk characterization. 
+
+   Risk assessment is undertaken by joint FAO/WHO, EFSA, ATSDR, ... 
+
+   <br/>
+
+- **Risk management**: The process, distinct from risk assessment, of weighing policy alternatives, in consultation with all interested parties, considering risk assessment and other factors relevant for the health protection of consumers and for the promotion of fair trade practices and, if needed, selecting appropriate prevention and control options. Risk management is undertaken by the Codex Alimentarius Commission ... 
+
+   <br/>
+
+- **Risk communication**: The interactive exchange of information and opinions throughout the risk analysis process concerning risk, risk-related factors and risk perceptions, among risk assessors, risk managers, consumers, industry, the academic community and other interested parties, including the explanation of risk assessment findings and the basis of risk management decisions.
+
+<br/>
+
+<hr style="border:2px solid blue"> </hr>
+
+### Hazard
+
+A biological, chemical, or physical agent in, or condition of, food with the potential to cause an adverse health effect [@CodexAlimentarius1999; @EU178Reg2002].
+
+<br/>
+
+Inherent property of an agent or situation having the potential to cause adverse effects when an organism, system or (sub)population is exposed to that agent.
+
+<br/>
+
+**Figure 2**: Food hazards
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "Food hazard.png"))
+```
+
+<br/>
+
+**Table 1**: Potential chemical food safety hazards
+
+**A** = Metals & other inorganic compounds; **B** = Organic compounds; **C** = Toxins; **D** = Antibiotics and antifungals [@FAO2020; @Buckley2020]
+
+```{r, echo=FALSE}
+tb1 <- read.csv(here("Tables_Figures","Hazards.csv"))
+
+tb1 %>% regulartable() %>%
+  width(width = 0.5) %>%
+  align(align = "center", part = "all")%>%
+  autofit()
+```
+
+> Note: This list of selected potential chemical food safety hazards is not all inclusive.
+
+<br/>
+
+<hr style="border:2px solid blue"> </hr>
+
+### Risk
+
+*Risk* is a measure of the likelihood of a **hazard** causing harm and the **severity** of that harm. Or, another way of looking at it is to consider risk an estimate of the probability of a hazard being present.
+
+<br/>
+
+*Risk* is the probability of an adverse effect in an organism, system or (sub)population caused under specified circumstances by exposure to an agent.
+
+<br/>
+
+Risk means a function of the probability of an adverse health effect and the severity of that effect, consequential to a hazard [@EU178Reg2002]
+
+<br/>
+
+<hr style="border:2px solid blue"> </hr>
+
+### Hazard vs. Risk
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "Hazard vs. Risk.png"))
+```
+
+<br/>
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "Picture India.png"))
+```
+
+<br/>
+
+<hr style="border:2px solid blue"> </hr>
+
+### Risk ranking
+
+The categorisation of a risk can be done by combining the likelihood of occurrence in a matrix with the severity of the consequence.
+
+<br/>
+
+*Risk ranking* is a technique that can be used to indentify the most significant risks, thereby prioritising them in a given situation to enable efficient and effective management decision making [@FAO2020].
+
+<!--https://www.cremeglobal.com/risk-ranking-of-food-safety-hazards/ -->
+
+<br/>
+
+**Figure 3**: Risk ranking
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "Representation of risk.png"))
+```
+
+<br/>
+
+<hr style="border:2px solid blue"> </hr>
+
+## Risk assessment
+
+<br/>
+
+**Figure 4**: Risk assessment
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "Risk assessment diagram.png"))
+```
+
+<br/>
+
+Risk assessment is the **central scientific component** of risk analysis and was developed primarily because of the need to make decisions to protect health in the face of scientific uncertainty. 
+
+<br/>
+
+Risk assessment of food chemicals can be generally described as characterizing the potential hazards and the associated risks to life and health resulting from exposure of humans to chemicals present in food over a specified period.
+
+<br/>
+
+Risk assessment is the key part of risk analysis that helps make decisions about human health protection from exposure to hazardous chemicals. 
+
+<br/>
+
+**Risk assessment** is an activity that provides a crucial link between regulatory and public health policy decision making. It offers a highly systematic framework within which information can be organized and evaluated to serve the practical needs of decision makers. It provides information on what can and cannot be learned from the available research about threats to human health. 
+
+<br/>
+
+According to the FAO/WHO, risk assessment is divided into four steps: **hazard identification**, **hazard characterization**, **exposure assessment**, and **risk characterization**.
+
+<br/>
+
+* What is the probability (preferably expressed quantitatively) that adverse health effects will occur in individuals exposed to an agent (whether it is a chemical, biological, or physical agent) or activity?  <!--This is a pontential reference [@Suitor2007] -->
+
+<br/>
+
+>[See EFSA: The four steps of risk assessment](https://multimedia.efsa.europa.eu/riskassessment/index.htm )
+
+<br/>
+
+<hr style="border:2px solid blue"> </hr>
+
+### Hazard identification
+
+The purpose of food chemical hazard identification is to evaluate the weight of evidence for adverse health effects, based on assessment of all available data on toxicity and mode of action. It is designed to primarily address two questions: **1) the nature of any health hazard to humans that an agent may pose** and **2) the circumstances under which an identified hazard may be expressed**. 
+
+<br/>
+
+Hazard identification is based on analyses of a variety of data, ranging from observations in humans or domestic animals and studies in laboratory animals and *in vitro* laboratory studies through to analysis of structure–activity relationships. From the range of studies and observations available, the nature of any toxicity or adverse health effects occurring and the affected target organs or target tissues are identified.
+
+<br/>
+
+> An adverse effect is described by the International Programme on Chemical Safety (IPCS) as "Change in morphology, physiology, growth, reproduction, development, or lifespan of an organism which results in impairment of functional capacity or impairment of capacity to compensate for additional stress or increased susceptibility to the harmful effects of other environmental influences." [@KEMI2020] 
+
+<br/>
+
+It is important to stress that regardless of the use situation, the intrinsic hazard of the chemical is the same and thus the hazard assessment from one country can be of use in another country.
+
+<hr style="border:2px solid blue"> </hr>
+
+### Hazard characterization
+
+Hazard characterization is the second stage in the process of hazard assessment and the second of four steps in risk assessment.
+
+<br/>
+
+The qualitative and, wherever possible, quantitative description of the inherent properties of an agent or situation having the potential to cause adverse effects. This should, where possible, include a dose–response assessment and its attendant uncertainties. 
+
+<br/>
+
+Hazard characterization describes the relationship between the administered dose, or exposure to, a chemical and the incidence of an adverse health effect. The critical effect—that is, the first adverse effect observed as the dose or exposure is increased—is determined.
+
+<br/>
+
+In cases where the toxic effect is assumed to have a threshold, hazard characterization usually results in the establishment of health-based guidance values—for example, an acceptable daily intake (ADI) for additives or residues or a tolerable intake (TI) for contaminants.
+
+<br/>
+
+**Figure 5**: Dose-response functions and 95% confidence bands. 
+
+<br/>
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "Dose-response.png"))
+```
+
+<br/>
+
+> Metal concentrations and anthropometric indicators of 6–11-year-old children from the 2013 to 2016 NHANES [@Signes2020]. 
+
+<br/>
+
+**Figure 6**: Illustration of non-threshold (circles) and threshold (stars) dose-response relationships [@KEMI2020].
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "Threshold.png"))
+```
+
+<br/>
+
+<hr style="border:2px solid blue"> </hr>
+
+### Exposure assessement
+
+Exposure assessment is the third step in the process of risk assessment. Exposure depends on conditions that may vary between countries or, more likely, at a local level
+
+<br/>
+
+Exposure assessment is defined as follows: “Evaluation of the exposure of an organism, system, or (sub)population to an agent (and its derivatives). 
+
+<br/>
+
+The exposure assessment of food chemicals may be described more narrowly as “The qualitative and/or quantitative evaluation of the likely intake of chemical agents via food as well as exposure from other sources if relevant”.
+
+<br/>
+
+In the case of food chemicals, dietary exposure assessment takes into consideration the occurrence and concentrations of the chemical
+
+<br/>
+
+The exposure assessment takes into account the consumption patterns of the foods containing the chemical and the likelihood of consumers eating large amounts of the foods in question (high consumers) and of the chemical being present in these foods at high levels. Usually a range of intake or exposure estimates will be provided (e.g. for average consumers and for high consumers), and estimates may be broken down by subgroup of the population (e.g. infants, children, adults).
+
+<br/>
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "Food Water.png"))
+```
+
+<br/>
+
+**Figure 7**: Schematic illustration of exposure, absorption, distribution, metabolism, and excretion of chemicals [@KEMI2020].
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "ExposureDiagram.png"))
+```
+
+<br/>
+
+**Toxicokinetics:** *What the body do with the chemical?* **A**bsorption; **D**istribution; **M**etabolism; **E**xcretion.
+
+```{r, eval = TRUE, out.width="40%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "ADME.png"))
+```
+
+<br/>
+
+**Toxicodynamics:** *What does the chemical do to the body?* Interaction between a substance and the body that result in a toxic effect.
+
+<br/>
+
+**Agregate exposure**: combined exposures to a single stressor across multiple routes and multiple pathways.
+
+```{r, eval = TRUE, out.width="40%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "AgregateExposure.png"))
+```
+
+[See EPA ExpoBox](https://www.epa.gov/expobox/exposure-assessment-tools-tiers-and-types-aggregate-and-cumulative)
+
+<br/>
+
+**Cumulative exposure**: combined exposure to *multiple stressors* via multiple exposure pathways that affect single biological target.
+
+```{r, eval = TRUE, out.width="40%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "CumulativeExposure.png"))
+```
+
+[See EPA ExpoBox](https://www.epa.gov/expobox/exposure-assessment-tools-tiers-and-types-aggregate-and-cumulative)
+
+<hr style="border:2px solid blue"> </hr>
+
+### Risk characterization
+
+Risk characterization is final step of the risk assessment process. Risk characterisation combines the results of hazard identification and dose-response assessment with exposure assessment.
+
+<br/>
+
+The qualitative and, wherever possible, quantitative determination, including attendant uncertainties, of the probability of occurrence of known and potential adverse effects of an agent in a given organism, system, or (sub)- population, under defined exposure conditions. 
+
+<br/>
+
+In risk characterization, the information from the intake or exposure assessment and the hazard characterization is integrated into advice suitable for decision-making in risk management. Risk characterization provides estimates of the potential risk to human health under different exposure scenarios. It should include all key assumptions and describe the nature, relevance and magnitude of any risks to human health.
+
+<br/>
+
+The risk characterization statement should include a clear explanation of any uncertainties in the risk assessment resulting from gaps in the science base. It should also include, where relevant, information on susceptible subpopulations, including those with greater potential exposure or specific predisposing physiological conditions or genetic factors. The advice to risk managers can be in the form of a comparison of the relative risks among risk management options.
+
+<br/>
+
+The health risk characterisation can be described as follows:
+
+	*Risk unacceptable: Exposure/reference value ≥ 1*
+	
+	*Risk acceptable: Exposure/reference value <1*
+
+<br/>
+
+```{r, eval = TRUE, out.width="50%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "Risk.png"))
+```
+
+<hr style="border:2px solid blue"> </hr>
+
+## Approach
+
+Generally, two approaches can be followed to assess risk [@Devleesschauwer2018; @FAO2020]
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "Assessing risk.png"))
+```
+
+<br/>
+
+<hr style="border:2px solid blue"> </hr>
+
+## Example risk assessment
+
+<br/>
+
+[EFSA explains risk assessment: Caffeine](https://www.efsa.europa.eu/en/corporate/pub/efsaexplainscaffeine150527)
+
+<br/>
+
+[Scientific Opinion on the safety of caffeine](https://www.efsa.europa.eu/en/efsajournal/pub/4102)
+
+<br/>
+
+<hr style="border:2px solid blue"> </hr>
+
+## References
+
+<div id="refs"></div>
