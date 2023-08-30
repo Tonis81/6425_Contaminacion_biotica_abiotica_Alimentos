@@ -1,1 +1,433 @@
-# A caucus-race and a long tale
+
+# Top-down Approach
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "top down.png"))
+```
+
+<br/>
+
+<hr style="border:2px solid blue"> </hr>
+
+<br/>
+
+## Epidemiology
+
+```{r, eval = TRUE, out.width="60%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "Human data.png"))
+```
+
+Epidemiology is the study of the patterns, causes, and effects of health and disease (and healthcare) in populations [@openlearn2016]. 
+
+<br/>
+
+Epidemiology has been defined as ‘the study of how often diseases occur in different groups of people and why’. It is concerned not only with the distribution of disease within a particular group or population, but also with the causes of disease. Epidemiologists are in many ways disease detectives, tracking down disease to discover why it occurs as well as when and where it occurs [@openlearn2016].
+
+<br/>
+
+Here is the classic form of an epidemiologic question: “What is the relationship between this exposure and that outcome?”[@openlearn2016]
+
+<br/>
+
+Epidemiology is particularly interested in the patterns of disease distribution in human populations. In particular, it aims to discover who develops health problems, when they contract illness and in which locations a problem is particularly prevalent  [@openlearn2016].
+
+
+
+<br/>
+
+<hr style="border:2px solid blue"> </hr>
+
+### Types of epidemiology studies
+
+Epidemiological studies generally fall into four broad categories [@openlearn2016]: 
+
+<br/>
+
+- Cross-sectional studies 
+- Case-control studies 
+- Cohort studies 
+- Intervention studies.
+
+<br/>
+
+***Cross-Sectional***: In cross-sectional studies a single set of assessments is made on a group of participants. These might be life style habits (e.g., diet, alcohol use), disease status (e.g., diabetic or not) or medical measurements (e.g., diastolic blood pressure). Cross-sectional studies measure the prevalence of conditions or characteristics of people in a population at a point in time or over a short period <!--cite here the papers I am planning to discuss as cross-sectional-->.
+
+> Prevalence is the total number of people suffering from a specific disease at a certain point in time. The point prevalence rate per 1000 population = the number of existing cases of the disease in the population at a specific moment in time / the population at risk at that specific time; for example, June 2000.
+
+<br/>
+
+***Case-Control Study***: In case-control studies, participants are selected according to whether or not they have experienced the outcome (often the “disease”) under study. These focus on determining disease causation. The ‘case’ is a person who has a particular symptom or medical condition. Thus, the focus is on a group of cases which is then compared with a ‘control group’ consisting of persons not having the symptom or the medical condition (example [@Signes-Pastor2019e]).
+
+<br/>
+
+***Cohort Study***: A cohort is a group of participants followed over time. If there is formal follow-up of individuals over time, the study is often referred to as a cohort (or follow-up) study. Example of cohort studies include "INfancia y Medio Ambiente" (INMA) in Spain, and the New Hampshire Birth Cohort Study (NHBCS) in the US.
+
+<br/>
+
+***Intervention studies***: They involve intervening with a group of people, and include an equivalent group which acts as a ‘control’.  The most popular study of this kind is the randomised controlled trial (RCT). In RCT the investigators determine the exposures (i.e., treatment) for the patients. 
+
+<br/>
+
+<hr style="border:2px solid blue"> </hr>
+
+<br/>
+
+#### INMA - INfancia y Medio Ambiente
+
+Prospective cohort study - 7 subcohorts (**prior**: Ribera d'Ebre, Menorca, and Granada; **new**: Asturias, Gipuzkoa, Sabadell, and Valencia) - [web](https://www.proyectoinma.org/).
+
+<br/>
+
+Evaluate prenatal and early-life exposure to environmental pollutants.
+
+<br/>
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "INMA.png"))
+```
+
+<br/>
+
+**Gathered information**
+
+```{r, echo=FALSE, warning=FALSE}
+tb1 <- read.csv(here("Tables_Figures","INMA information.csv"))
+kable(tb1) %>%
+  kable_paper(bootstrap_options = "striped", full_width = F)
+```
+
+<br/>
+
+<hr style="border:2px solid blue"> </hr>
+
+#### NHBCS - New Hampshire Birth Cohort Study
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "Logo NHBCS.png"))
+```
+
+<br/>
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "NHBCS web.png"))
+```
+
+[NHBCS](https://www.protectkidshealth.com/) & [Dartmouth College](https://geiselmed.dartmouth.edu/childrenshealth/new-hampshire-birth-cohort-study/)
+
+<br/>
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "In Small Doses.png"))
+```
+
+[In Small Doses: Arsenic](https://geiselmed.dartmouth.edu/childrenshealth/quick-links/)
+
+<br/>
+
+### Other cohort studies
+
+#### National Health and Nutrition Examination Survey (NHANES)
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "NHANES.png"))
+```
+
+[NHANES](https://www.cdc.gov/nchs/nhanes/index.htm)
+
+<br/>
+
+#### Environmental influences on Child Health Outcomes (ECHO)
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "ECHO.png"))
+```
+
+[ECHO](https://echochildren.org) [@Buckley2020]
+
+<br/>
+
+<hr style="border:2px solid blue"> </hr>
+
+## Diet assessement
+
+Food frequency questionnaire (FFQ) 
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "FFQ_INMA.png"))
+```
+
+<br/>
+
+3-day diaries
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "3-day diary.png"))
+```
+
+<br/>
+
+<hr style="border:2px solid blue"> </hr>
+
+<br/>
+
+## Inorganic Arsenic metabolism
+
+Propose metabolic pathways for the conversion of inorganic arsenic into organic arsenic [@Mochizuki2019]
+
+The inorganic arsenic metabolism is a multistep process catalized by the enzime arsenic-3-metiltransferase (AS3MT), and the S-adenosylmetionine as methyl group donor.
+
+<br/>
+
+**Figure 1**: Inorganic arsenic metabolism
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "iAs metabolism_2.png"))
+```
+
+<br/>
+
+<hr style="border:2px solid blue"> </hr>
+
+<br/>
+
+### Biomarkers
+
+```{r, echo=FALSE}
+tb1 <- read.csv(here("Tables_Figures","Biomarkers table.csv"))
+  kbl(tb1) %>%
+  kable_paper(bootstrap_options = "striped", full_width = F)
+```
+
+[@Hall2006; @Marchiset-Ferlay2012]
+
+<!-- @Ashley-Martin2022ul also provide aditional information about biomarkers-->
+
+<br/>
+
+<hr style="border:2px solid blue"> </hr>
+
+<br/>
+
+#### Systematic reviews toenail arsenic
+
+[Instituto de Salud Carlos III  - Revisión científica: ¿son las uñas de los pies buenos biomarcadores de exposición a metales tóxicos?](https://www.isciii.es/Noticias/Noticias/Paginas/Noticias/Revisi%C3%B3n-Exposici%C3%B3n-Metales-U%C3%B1as-Pies-CNE.aspx)
+
+<br/>
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "Toenail reveiw.png"))
+```
+
+<br/>
+
+ *n* = 129 with quantitative data - 29 countries
+
+<br/>
+
+**Figure 2**: Median arsenic content natural log-transformed in toenails according to country based on the reported arithmetic mean/median value. The colors from yellow to red refer to the log-transformed median toenail arsenic concentrations calculated using the overall mean/median value reported in the included studies [@Signes-Pastor2021a]. 
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "toenails world map.png"))
+```
+
+<br/>
+
+**Figure 3**: Arsenic concentrations (arithmetic mean or median, μg/g) in human toenails (1993–2017). The green circles and red crosses refer to the minimum and maximum values of toenail arsenic in population subgroups assessed in the reviewed study. The empty rhombus refers to the overall value of toenail arsenic reported in the reviewed study. The number within brackets refers to the overall size of the study population, and when this information is not available (n.a.). Noticed that the range of the x-axis in the arithmethic mean and median differ to help visualization. The studies are sorted by country, year, and first author’s name. UK = United Kingdom; USA = United States of America [@Signes-Pastor2021a].
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "Figure systematic review.png"))
+```
+
+<br/>
+
+Drinking water, occupational exposure, and living in industrial areas associated with an increased toenail arsenic concentrations. 
+
+<br/>
+
+Toenail arsenic concentration is an adequate measure to evaluate chronic diseases
+
+<br/>
+
+Other elements in toenails [@Gutierrez-Gonzalez2019; @Salcedo-Bellido2021]
+
+<br/>
+
+<hr style="border:2px solid blue"> </hr>
+
+<br/>
+
+## Effect of weaning on metals exposure
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "Transition to solid food SR.png"))
+```
+
+<br/>
+
+<hr style="border:2px solid blue"> </hr>
+
+<br/>
+
+### Methods
+
+NHBCS;  *n* = 15 pairs (pre-weaning at 4 months and post-weaning at 6 months of age). 3-day food diary. 
+
+```{r, eval = TRUE, out.width="70%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "weaning.png"))
+```
+
+<br/>
+
+<hr style="border:2px solid blue"> </hr>
+
+<br/>
+
+### Results
+
+**Figure 4**: Concentrations of urinary arsenic species before (at 4 months of age) and during weaning (at 6 months of age) to solid foods. At 6 months of age infants’ diets included solid food in addition to breast milk, formula, or a mixture of both breast milk and formula. Each infant is identified by a unique color to facilitate the comparison between the two time points. 
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "transition.png"))
+```
+
+<br/>
+
+**Figure 5**: Concentrations of infant urinary arsenic species in relation to intake of specific foods at 6 months of age. Each infant is identified by a unique color. Spearman’s correlation coefficient and p-value for each dietary item. Urinary arsenic species concentration and solid food consumption were natural logarithm transformed to help visualization. The least-squares regression line is also included to help visualize associations. *Infant P14 was not included in Spearman’s correlation between urinary arsenic species content and the formula powder intake level (outlier).
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "Transition 2.png"))
+```
+
+<br/>
+
+<hr style="border:2px solid blue"> </hr>
+
+<br/>
+
+## Arsenic exposure and neurodevelopment
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "neurodevelopment.png"))
+```
+
+[@Signes-Pastor2019a]
+
+<br/>
+
+<hr style="border:2px solid blue"> </hr>
+
+<br/>
+
+### Methods
+
+400 children 4-5 years.  100 children evenly distributed between boys and girls from each sub-cohort of Asturias, Gipuzkoa, Sabadell, and Valencia. Median water As < 1 µg/L.
+
+<br/>
+
+Spot **urine** samples. uAs speciation. iAs exposure = ΣiAs + MMA + DMA
+
+<br/>
+
+Children’s neurodevelopment - standardized version of the **McCarthy Scales of Children’s Ability** (MSCA).
+
+```{r, eval = TRUE, out.width="80%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "msca.png"))
+```
+
+<br/>
+
+MSCA test includes a battery of 18 subtests (i.e. construction with cubes, puzzle, pictorial memory, vocabulary, calculation, beating sequence, verbal memory, right-left orientation, leg coordination, arm coordination, imitative action, copying of drawings, drawing of a child, numerical memory, verbal fluency, counting and distribution, opposites, and concept formation) [@Julvez2011].
+
+<br/>
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "msca scores.png"))
+```
+
+<br/>
+
+Multiple linear models adjusted for confounders (Directed acyclic graph): ﻿maternal highest attained level of education (i.e. primary, secondary, or university), and children's sex (i.e. girls or boys), BMI (kg/m2), age at MSCA (years) and calorie adjusted consumption of rice and fish/seafood products (g/day).
+
+<br/>
+
+<hr style="border:2px solid blue"> </hr>
+
+<br/>
+
+### Results
+
+**Table 1**: Association between children’s ln sum of urinary As concentrations and MSCA scores (sex-combined)
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "table msca1.png"))
+```
+
+<br/>
+
+For each interquartile range increase in exposure, we found a decrease of over 2 points in the scores for global motor and gross motor scores, and 1.5 points in the scores for the fine motor function.
+
+<br/>
+
+**Table 2**: Association between children’s ln sum of urinary As concentrations and MSCA scores according to sex
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "table msca 2.png"))
+```
+
+For each interquartile range increase in exposure we found a decrease of **2.6 points in the scores** for the **quantitative index** and **working memory** among boys. 
+
+<br/>
+
+Inorganic As exposure, even at relatively low levels from diet, may affect negatively the scores in the **original global motor** function the derived **gross motor** function and **fine motor** function.
+
+<br/>
+
+Boys may be more susceptible to iAs neurotoxicity compared to girls particularly from **cognitive tasks** related to **numerical function**, and **temporarily storing** and **managing information** 
+
+<br/>
+
+**Cross-sectional design** of the study that precludes us from determining temporality and thus limits any inferences about causality. 
+
+<br/>
+
+Effect of unknown factors such as other environmental/dietary factors or **residual confounding** remains a possibility. 
+
+<br/>
+
+Relatively **small size** of the study population, especially in sex-stratified analyses.
+
+<br/>
+
+<hr style="border:2px solid blue"> </hr>
+
+<br/>
+
+## Respiratory outcomes
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "spirometry.png"))
+```
+
+[@Signes-pastor2021]
+
+<br/>
+
+<hr style="border:2px solid blue"> </hr>
+
+<br/>
+
+## Mixture 
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "Mixture.png"))
+```
+
+[@Signes-Pastor2019d]
+
+<br/>
+
+<hr style="border:2px solid blue"> </hr>
+
+## References
+
+<div id="refs"></div>

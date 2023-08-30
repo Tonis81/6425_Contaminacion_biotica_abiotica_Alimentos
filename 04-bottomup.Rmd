@@ -1,0 +1,367 @@
+# Bottom-up Approach
+
+<br/>
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "Bottom-up.png"))
+```
+
+ <br/>
+
+<!--I need to describe this: Raw material (metal concentrations), Processing (rice cooking), Distribution and Storage, consumption (market basket, bio accessibility)-->
+
+<!--Here I should include all the examples (paper) that I have related to bottom up approach.-->
+
+<!--Percentage of rice products with high concentration than the maximum level.-->
+
+<!--https://www.youtube.com/watch?v=OaPyz6I_0Do) -->
+
+## Raw material
+
+Metals have a particular ability to accumulate in foods as they are not subject to traditional biodegradation processes. Instead, they are readily absorbed by sediments and biomagnified through the food chain [@DEPAIVA201960].
+
+### Vegetables - Arsenic
+
+**Figure 1**: Arsenic concentrations in vegetables from West Bengal India [@Signes-Pastor2008a].
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "Vegetables india.png"))
+```
+
+<br/>
+
+<hr style="border:2px solid blue"> </hr>
+
+<br/>
+
+### Rice - Arsenic
+
+<br/>
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "Rice field.png"))
+```
+
+<br/>
+
+Cultivation in **fooded paddy fields** - inorganic arsenic mobilization [@Signes-Pastor2007d].
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "Biogeochemistry AS.png"))
+```
+
+<br/>Arsenic in taken up by the rice plants through pathways for nutrients:
+
+<br/>
+
+Arsenite through **silicon pathway** – highly efficient in rice plant. 
+
+<br/>
+
+Arsenate through **phosphate transporter.** 
+
+<br/>
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "Rice grain.png"))
+```
+
+<br/>
+
+**Brown rice** generally contains higher arsenic concentrations than polished/white rice.
+
+<br/>
+
+**Rice bran** (Pericarp & Aleurone) extremely high iAs content. Superfood, popular ingredient in health-added products and high nutritional content. 
+
+```{r, eval = TRUE, out.width="50%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "Rice bran.png"))
+```
+
+<br/>
+
+<hr style="border:2px solid blue"> </hr>
+
+<br/>
+
+## Rice products - Arsenic
+
+<br/>
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "Baby rice cereals.png"))
+```
+
+<br/>
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "Paper bby food 2016.png"))
+```
+
+<br/>
+
+**Figure 2**: Inorganic arsenic concentrations in rice-based products from the UK market [@Signes-Pastor2016b]
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "Figure paper Signes 2016.png"))
+```
+
+<br/>
+
+<!--It might worth metioning about organic and non-organic production-->
+
+<br/>
+
+<hr style="border:2px solid blue"> </hr>
+
+<br/>
+
+### FDA Infant Rice Cereals Inorganic Arsenic
+
+[FDA Makes Available Results from Testing of Infant Rice Cereal for Inorganic Arsenic (tested in 2018)](https://rpubs.com/ToniSignes/593260)
+
+<br/>
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "FDA rice samples.png"))
+```
+
+<br/>
+
+<hr style="border:2px solid blue"> </hr>
+
+### Legislation
+
+**Table 1**: Proposed and existing inorganic arsenic, lead  standards
+
+```{r, echo=FALSE}
+tb1 <- read.csv(here("Tables_Figures","standards and recomendations.csv"))
+  kbl(tb1) %>%
+  kable_paper(bootstrap_options = "striped", full_width = F)
+```
+
+*EC, European Commission; EPA, Environmental Protection Agency; EU, European Union; FDA, Food and Drug Administration; ppb, parts per billion; WHO, World Health Organization.* [@EBair2022]
+
+<br/>
+
+<hr style="border:2px solid blue"> </hr>
+
+## Processing and cooking
+
+**Figure 3**: Dehusking and rice cooking in excess of water reduces arsenic burden [@Raab2009; @Signes-Pastor2008; @Signes-Pastor2008b; @Signes-Pastor2008c]
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "Rice cooking.png"))
+```
+
+[Rethinking Rice Preparation for Highly Efficient Removal of Inorganic Arsenic Using Percolating Cooking Water](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0131608)
+
+[Inorganic arsenic removal in rice bran by percolating cooking water](https://www.sciencedirect.com/science/article/pii/S0308814617307203?via%3Dihub)
+
+<br/>
+
+**Figure 4**: Rice and rice bran processing with percolating water reduces arsenic burden [@Signes-Pastor2017a; @Carey2015]
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "Percolating.png"))
+```
+
+<br/>
+
+<hr style="border:2px solid blue"> </hr>
+
+## Distribution and storage
+
+### Baby food - Arsenic, Lead, Cadmium and Mercury
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "Congressional Report.png"))
+```
+
+<br/>
+
+**Table 1**: Summary of findings from U.S. congressional subcommittee on economic and consumer policy reports on heavy metal content of top seven baby food manufacturers in the United States [@EBair2022].
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "Summary Congressional Report.png"))
+```
+
+<br/>
+
+[Baby Foods Are Tainted with Dangerous Levels of Arsenic, Lead, Cadmium, and Mercury - February 4, 2021](https://oversight.house.gov/sites/democrats.oversight.house.gov/files/2021-02-04%20ECP%20Baby%20Food%20Staff%20Report.pdf)
+
+[New Disclosures Show Dangerous Levels of Toxic Heavy Metals in Even More Baby Foods - September 29, 2021](https://oversight.house.gov/sites/democrats.oversight.house.gov/files/ECP%20Second%20Baby%20Food%20Report%209.29.21%20FINAL.pdf)
+
+<br/>
+
+<hr style="border:2px solid blue"> </hr>
+
+## Consumption
+
+**Arsenic bioaccessibility** refers to the fraction of arsenic that dissolves during the gastrointestinal digestion and is available for absorption during transit through the small intestine to enter the blood stream [@Signes-Pastor2012].
+
+<br/>
+
+**Arsenic bioavailability** refers to the fraction of arsenic that enters the blood stream, and thus becomes harmful to the human body [@Signes-Pastor2012].
+
+<br/>
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "Arsenic bioaccessibility.png"))
+```
+
+<br/>
+
+### Food questionnaires
+
+<br/>
+
+Food frequency questionnaries (FFQ)
+
+<br/>
+
+24-h recall
+
+<br/>
+
+3-day food diary
+
+<br/>
+
+<hr style="border:2px solid blue"> </hr>
+
+<br/>
+
+## Total Diet Study
+
+### FDA Total Diet Study
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "Total diet.png"))
+```
+
+<br/>
+
+[@TotalDietFDA2022]
+
+[Total Diet Study](https://www.fda.gov/food/science-research-food/fda-total-diet-study-tds#:~:text=The%20FDA%20Total%20Diet%20Study,food%20safety%20and%20nutrition%20programs)
+
+<br/>
+
+<hr style="border:2px solid blue"> </hr>
+
+### Total Diet in Catalonia region
+
+<br/>
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "Dieta Cataluna.png"))
+```
+
+<br/>
+
+[Contaminantes químicos. V Estudio de dieta total en Cataluña](https://acsa.gencat.cat/web/.content/_Publicacions/Estudis_de_dieta_total/contaminants_quimics/EDT-Contaminants-2017/Estudi-Dieta-Metales-pesados-2019.pdf)
+
+<br/>
+
+<hr style="border:2px solid blue"> </hr>
+
+<br/>
+
+## Strategies to reduce exposure
+
+### Regulations
+
+**Figure 5**: Impact of the EU regulation on arsenic in rice-based products for infants and young children [@Signes-Pastor2017e; @Carey2018a; @Signes-Pastor2017a]
+
+<br/>
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "Effect legislation.png"))
+```
+
+<br/>
+
+**Strategies taken by manufactures to reduce** **iAs** **in rice-based infants’ products:** 
+
+<br/>
+
+**i**) Pure rice products, such as crackers, it appears that low iAs has been specifically sourced for formulation; 
+
+<br/>
+
+**ii**) Appears to be a lower representation of pure rice products being produced/available and; 
+
+<br/>
+
+**iii**) To blend rice with other gluten free grains (i.e. maize, oats, quinoa, etc.) to dilute the amount of rice and thus the iAs content. Increase presence of mixed multi-grain products and mueslis for infants [@Signes-Pastor2017e; @Carey2018a; @Signes-Pastor2017a].
+
+<br/>
+
+<hr style="border:2px solid blue"> </hr>
+
+<br/>
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "HBBF.png"))
+```
+
+<br/>
+
+[Is Homemade Baby Food Better?](https://www.healthybabyfood.org/sites/healthybabyfoods.org/files/2022-08/StoreVsHomemade_2022.pdf)
+
+<br/>
+
+<hr style="border:2px solid blue"> </hr>
+
+<br/>
+
+## Oportunities and Challages for Dietary Arsenic Intervention 
+
+<br/>
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "Brief Communications.png"))
+```
+
+<br/>
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "Diagram Reduction.png"))
+```
+
+<br/>
+
+> Our greatest success in reducing arsenic dietary exposures can be achieved only by a multisector, multiagency, science-informed, public health systems approach coordinated across regulators and the industry [@Nachman2018].
+
+<br/>
+
+<hr style="border:2px solid blue"> </hr>
+
+<br/>
+
+### Closer to Zero: Action Plan for Baby Foods
+
+[Closer to Zero](https://www.fda.gov/food/metals-and-your-food/closer-zero-action-plan-baby-foods)
+
+<br/>
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "Closer to Zero logo.png"))
+```
+
+<br/>
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "Closer Zero Approach.png"))
+```
+
+<br/>
+
+<hr style="border:2px solid blue"> </hr>
+
+<br/>
+
+## References
+
+<div id="refs"></div>
