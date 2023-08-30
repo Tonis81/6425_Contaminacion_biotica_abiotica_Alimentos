@@ -25,3 +25,16 @@ approach
 example-risk-assessment
 references
 risk-1
+a-caucus-race-and-a-long-tale-1
+a-caucus-race-and-a-long-tale-2
+metals
+who---chemicals-of-public-health-concern
+atsdrs-subtance-priority-list
+vulnerable-subpopulations
+inorganic-contaminats
+arsenic
+mercury
+lead
+cadmium
+references-1
+references-2

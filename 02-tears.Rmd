@@ -1,2 +1,158 @@
-# The pool of tears
 
+# Metals
+
+
+```{r, include=FALSE}
+library(here)
+library(tibble)
+library(tidyverse)
+library(formattable)
+library(data.table)
+library(kableExtra)
+library(flextable)
+```
+
+## WHO - chemicals of public health concern
+
+[WHO. 10 Chemicals of public health concern](https://www.who.int/news-room/photo-story/photo-story-detail/10-chemicals-of-public-health-concern)
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "WHO 10 Toxics.png"))
+```
+
+<br/>
+
+<hr style="border:2px solid blue"> </hr>
+
+## ATSDR's Subtance Priority list
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "ATSDR.png"))
+```
+
+[Agency for Toxic Substancies and Disease Register](https://www.atsdr.cdc.gov/spl/index.html#2019spl)
+
+<br/>
+
+<hr style="border:2px solid blue"> </hr>
+
+<br/>
+
+## Vulnerable subpopulations
+
+Infants and young children are especially vulnerable to the toxic elements due to their immature development and high ‘food intake/ body weight’ ratio [@EBair2022; @DEPAIVA201960]. Children are estimated to consume three-times as much food as adults when compared to their body mass [@Signes-Pastor2017e]
+
+<br/>
+
+Several toxic elements crosses the placenta and reach the fetus [@Punshon2015; @Concha1998]
+
+<br/>
+
+```{r, eval = TRUE, out.width="80%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "Vulnerable subpopulations.png"))
+```
+
+<br/>
+
+<hr style="border:2px solid blue"> </hr>
+
+<br/>
+
+## Inorganic contaminats
+
+<br/>
+
+### Arsenic
+
+```{r, eval = TRUE, out.width="21%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "As symbol.png"))
+```
+
+[Arsenic Exposure - Interactive infographic](http://arsenic.dali.dartmouth.edu/)
+
+<br/>
+
+```{r, echo=FALSE, warning=FALSE}
+tb1 <- read.csv(here("Tables_Figures","Metals Health Outcomes Arsenic.csv"))
+kable(tb1) %>%
+  kable_paper(bootstrap_options = "striped", full_width = F)
+```
+
+<br/>
+
+### Mercury
+
+```{r, eval = TRUE, out.width="20%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "Hg symbol.png"))
+```
+
+Unlike arsenic and lead, studies on mercury’s effect on childhood development have largely focused on the impact it may have via maternal exposure during pregnancy. In these instances, prenatal mercury exposure has consistently been found to be associated with poor neurodevelopment and lowered IQ [@Jacobson2015th].
+
+<br/>
+
+```{r, echo=FALSE, warning=FALSE}
+tb1 <- read.csv(here("Tables_Figures","Metals Health Outcomes Mercury.csv"))
+kable(tb1) %>%
+  kable_paper(bootstrap_options = "striped", full_width = F)
+```
+
+<br/>
+
+### Lead
+
+```{r, eval = TRUE, out.width="20%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "Pb symbol.png"))
+```
+
+Similar to inorganic arsenic, lead exposure has been associated with a number of poor health outcomes including decreased cognitive performance, behavioral problems, delayed puberty and stunted postnatal growth. Most concerning is that the cognitive effects that lead exposure in early childhood contributes to appear to be permanent. In one follow-up prospective study, individuals who had previously experienced lead-associated developmental delays in childhood continued to show persistent cognitive deficits into adulthood [@Mazumdar2011].
+
+<br/>
+
+```{r, echo=FALSE, warning=FALSE}
+tb1 <- read.csv(here("Tables_Figures","Metals Health Outcomes Lead.csv"))
+kable(tb1) %>%
+  kable_paper(bootstrap_options = "striped", full_width = F)
+```
+
+<br/>
+
+### Cadmium
+
+```{r, eval = TRUE, out.width="21%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "Cd symbol.png"))
+```
+
+<br/>
+
+Following suit with arsenic, lead, and mercury, cadmium exposure in infancy and young childhood has been found to negatively affect Full Scale IQ scores [@Sanders2015un]. Cadmium exposure has also been found to be linked to increased incidence of Attention-Deficit/ Hyperactivity Disorder (ADHD) [@Lee2018wx].
+
+<br/>
+
+```{r, echo=FALSE, warning=FALSE}
+tb1 <- read.csv(here("Tables_Figures","Metals Health Outcomes Cadmium.csv"))
+kable(tb1) %>%
+  kable_paper(bootstrap_options = "striped", full_width = F)
+```
+
+<br/>
+
+<hr style="border:2px solid blue"> </hr>
+
+<br/>
+
+[Royal Society of Chemistry](https://www.rsc.org/periodic-table)
+
+```{r, eval = TRUE, out.width="100%", echo=FALSE}
+knitr::include_graphics(here ("Tables_Figures", "Periodic table.png"))
+```
+
+<br/>
+
+<hr style="border:2px solid blue"> </hr>
+
+<br/>
+
+
+## References
+
+<div id="refs"></div>
