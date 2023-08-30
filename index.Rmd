@@ -242,7 +242,7 @@ knitr::include_graphics(here ("Tables_Figures", "Dose-response.png"))
 
 <br/>
 
-> Metal concentrations and anthropometric indicators of 6–11-year-old children from the 2013 to 2016 NHANES [@Signes2020]. 
+> Metal concentrations and anthropometric indicators of 6–11-year-old children from the 2013 to 2016 NHANES [@Signes2021]. 
 
 <br/>
 
