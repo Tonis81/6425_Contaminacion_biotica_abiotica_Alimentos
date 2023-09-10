@@ -378,10 +378,3 @@ knitr::include_graphics(here ("Tables_Figures", "Assessing risk.png"))
 
 [Scientific Opinion on the safety of caffeine](https://www.efsa.europa.eu/en/efsajournal/pub/4102)
 
-<br/>
-
-<hr style="border:2px solid blue"> </hr>
-
-## References
-
-<div id="refs"></div>

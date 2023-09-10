@@ -11,7 +11,6 @@ exposure-assessement
 risk-characterization
 approach
 example-risk-assessment
-references
 metals
 who---chemicals-of-public-health-concern
 atsdrs-subtance-priority-list
@@ -21,7 +20,6 @@ arsenic
 mercury
 lead
 cadmium
-references-1
 bottom-up-approach
 raw-material
 vegetables---arsenic
@@ -41,7 +39,6 @@ strategies-to-reduce-exposure
 regulations
 oportunities-and-challages-for-dietary-arsenic-intervention
 closer-to-zero-action-plan-for-baby-foods
-references-2
 top-down-approach
 epidemiology
 types-of-epidemiology-studies
@@ -62,4 +59,4 @@ methods-1
 results-1
 respiratory-outcomes
 mixture
-references-3
+references

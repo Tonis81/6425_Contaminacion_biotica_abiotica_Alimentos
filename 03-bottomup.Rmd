@@ -361,7 +361,3 @@ knitr::include_graphics(here ("Tables_Figures", "Closer Zero Approach.png"))
 <hr style="border:2px solid blue"> </hr>
 
 <br/>
-
-## References
-
-<div id="refs"></div>

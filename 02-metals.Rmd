@@ -152,7 +152,3 @@ knitr::include_graphics(here ("Tables_Figures", "Periodic table.png"))
 
 <br/>
 
-
-## References
-
-<div id="refs"></div>

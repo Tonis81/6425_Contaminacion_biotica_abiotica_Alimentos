@@ -427,7 +427,3 @@ knitr::include_graphics(here ("Tables_Figures", "Mixture.png"))
 <br/>
 
 <hr style="border:2px solid blue"> </hr>
-
-## References
-
-<div id="refs"></div>
